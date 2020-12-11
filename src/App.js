@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import { Button, Input } from '@material-ui/core';
 import ImageUpload from './ImageUpload';
-import InstagramPost from './InstagramPost'
+import IPost from './IPost'
 
 function getModalStyle() {
   const top = 50;
@@ -147,7 +147,7 @@ function App() {
         }
         </div>
         <div className="app__rightposts">
-          <InstagramPost />
+          <IPost />
         </div>
   
         </div>

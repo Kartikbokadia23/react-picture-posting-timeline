@@ -4,7 +4,7 @@ import Avatar from '@material-ui/core/Avatar';
 import {FaRegHeart} from 'react-icons/fa'
 import {RiChat3Line} from 'react-icons/ri'
 import {FiUpload,FiBookmark} from 'react-icons/fi'
-function InstagramPost() {
+function IPost() {
     return (
         <div className = "post">
             <div className = "ipost__header">
@@ -73,4 +73,4 @@ function InstagramPost() {
     )
 }
 
-export default InstagramPost
+export default IPost
