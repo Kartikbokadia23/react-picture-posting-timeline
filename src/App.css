@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+*{
+  margin: 0;
+}
+
+.post{
+  background-color: white;
+  max-width: 500px;
+  border: 1px solid lightgray;
+  margin-bottom: 45px;
+}
+
+.App{
+  background-color: #FAFAFA;
+}
+
+.app__brand{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+}
+
+.app__header{
+  object-fit: contain;
+  padding:20px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__headerImage{
+  object-fit: contain;
+  height: 45px;
+}
+
+.app__posts{
+  display: flex;
+  justify-content: center;
+}
+
+.app__leftposts,.app__rightposts{
+  padding: 10px;
+}
+
+.post__image{
+  width: 100%;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.post__text,.ipost__text{
+  font-weight: normal;
+  padding: 13px;
+}
+
+.post__header{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.post__avatar{
+  margin-right: 10px;
+}
+
+.app__signup{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.imageupload{
+  display:flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.imageupload__progress{
+  width: 100%;
+}
+
+.ipost__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.ipost__avatar{
+  display: flex;
+  align-items: center;
+}
+
+.light__caption{
+  color: rgb(97, 91, 91);
+}
+
+.ipost__button{
+  color: white;
+  height: 35px;
+  width: 110px;
+  background-color: #4c4cf1;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.ipost__icons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+
+
+.ipost__licon{
+  font-size: 23px;
+  margin-left: 0.5em;
+}
+
+.ipost__ricon{
+  font-size: 23px;
+  margin-right: 0.5em;
+}
