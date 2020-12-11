@@ -2,7 +2,12 @@ import React, {useState} from 'react';
 import {Button, Input} from '@material-ui/core';
 import {db, storage} from './firebase';
 import firebase from "firebase";
+import PropTypes from 'prop-types'
 function ImageUpload({username}) {
+    ImageUpload.propTypes = {
+        username : PropTypes.string
+    }
+
     const [image, setImage] = useState(null);
     const [progress, setProgress]=useState(0)
     const [caption, setCaption] = useState('')

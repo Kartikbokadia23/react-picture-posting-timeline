@@ -8,6 +8,7 @@ import { Button, Input } from '@material-ui/core';
 import ImageUpload from './ImageUpload';
 import IPost from './IPost'
 
+
 function getModalStyle() {
   const top = 50;
   const left = 50;
@@ -31,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
+
+
+
   const [posts, setPosts] = useState([])
   const classes = useStyles();
   const [open, setOpen] = useState(false);
@@ -84,6 +88,8 @@ function App() {
     auth.signInWithEmailAndPassword(email, password)
       .catch((error) => alert(error.message))
     setOpenSignIn(false)
+    setEmail('')
+    setPassword('')
   }
 
 
