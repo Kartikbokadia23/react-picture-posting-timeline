@@ -1,7 +1,14 @@
 import React from 'react'
 import Avatar from '@material-ui/core/Avatar';
+import PropTypes from 'prop-types'
 
 function Post({username , caption , imageUrl}) {
+
+    Post.propTypes = {
+        username : PropTypes.string,
+        caption : PropTypes.string,
+        imageUrl : PropTypes.string
+      }
     return (
         <div className = "post">
             <div className = "post__header">

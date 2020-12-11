@@ -7,7 +7,7 @@ import Modal from '@material-ui/core/Modal';
 import { Button, Input } from '@material-ui/core';
 import ImageUpload from './ImageUpload';
 import IPost from './IPost'
-
+import PropTypes from 'prop-types'
 
 function getModalStyle() {
   const top = 50;
@@ -33,7 +33,10 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
 
+  ImageUpload.propTypes = {
+    username : PropTypes.string
 
+  }
 
   const [posts, setPosts] = useState([])
   const classes = useStyles();
