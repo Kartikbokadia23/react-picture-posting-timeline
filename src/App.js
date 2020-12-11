@@ -135,27 +135,29 @@ function App() {
           )
       }
       </div>
-
-
       {user?.displayName ? (
+        <React.Fragment>
         <ImageUpload username={user.displayName} />
+        <div className = "app__posts">
+        <div className="app__leftposts">
+        {
+          posts.map(({ post, id }) => {
+            return <Post key={id} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
+          })
+        }
+        </div>
+        <div className="app__rightposts">
+          <InstagramPost />
+        </div>
+  
+        </div>
+        </React.Fragment>
       ):
       (
-        <div></div>
+        <div className="app__welcome">
+          <h1> Welcome To Our App.<br/>Please Sign/SignUp to Continue.</h1>
+        </div>
       )}
-      <div className = "app__posts">
-      <div className="app__leftposts">
-      {
-        posts.map(({ post, id }) => {
-          return <Post key={id} username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
-        })
-      }
-      </div>
-      <div className="app__rightposts">
-        <InstagramPost />
-      </div>
-
-      </div>
     </div>
   );
 }
