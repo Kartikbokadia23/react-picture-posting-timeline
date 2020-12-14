@@ -17,6 +17,9 @@
 </ul>
 
 
+<img src = "public/Screenshot 2020-12-14 at 1.08.18 PM.png" alt = "App Screenshot">
+
+
 
 
 ## Available Scripts
