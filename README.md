@@ -1,11 +1,26 @@
 # React Picture Posting Timeline  
 
-## Technologies Used
+## Technologies Used -
+<ul>
+<li>React JS - for component based system</li>
+<li>css - for styling</li>
+<li>Material ui - for advanced styling</li>
+<li>Firebase - For storing instagrams post and for authentication</li>
+</ul>
 
-React JS - for component based system\
-css - for styling\
-Material ui - for advanced styling\
-Firebase - For storing instagrams post and for authentication\
+## Features -
+<ul>
+<li>Add your photos with the captions on the timeline</li>
+<li>User authentication with e-mail and password</li>
+<li>Fully Responsive</li>
+<li>Minimal Designs and easily accessible</li>
+</ul>
+
+
+<img src = "public/Screenshot 2020-12-14 at 1.08.18 PM.png" alt = "App Screenshot">
+
+
+
 
 ## Available Scripts
 
