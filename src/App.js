@@ -1,12 +1,12 @@
 import './App.css';
-import Post from './Post.js';
+import Post from './components/Post.js';
 import React, { useEffect, useState } from "react";
-import { auth, db } from './firebase'
+import { auth, db } from './firebase/AppFirebase'
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import { Button, Input } from '@material-ui/core';
-import ImageUpload from './ImageUpload';
-import IPost from './IPost'
+import ImageUpload from './components/ImageUpload';
+import InstagramPost from './components/InstagramPost'
 import PropTypes from 'prop-types'
 
 function getModalStyle() {
@@ -156,7 +156,7 @@ function App() {
         }
         </div>
         <div className="app__rightposts">
-          <IPost />
+          <InstagramPost />
         </div>
   
         </div>
