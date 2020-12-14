@@ -45,6 +45,7 @@
 .app__posts{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .app__leftposts,.app__rightposts{
