@@ -8,6 +8,7 @@ import { Button, Input } from '@material-ui/core';
 import ImageUpload from './components/ImageUpload';
 import InstagramPost from './components/InstagramPost'
 import PropTypes from 'prop-types'
+import Avatar from '@material-ui/core/Avatar'
 
 function getModalStyle() {
   const top = 50;
@@ -51,7 +52,7 @@ function App() {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        console.log(authUser)
+        console.log(authUser.user)
         setUser(authUser)
       }
       else {
@@ -135,7 +136,13 @@ function App() {
       <div className="app__header">
       <h1 className="app__brand">Photo Fiesta</h1>
         {
-        user ? (<Button onClick={() => auth.signOut()}>Log Out</Button>)
+        user ? (
+          <div className="app__user"> 
+        <Avatar className="post__avatar" alt = {user.displayName} src = "/static/images/avatar/1.jpg"></Avatar>
+        <h3>{user.displayName.charAt(0).toUpperCase() + user.displayName.slice(1)}</h3>&nbsp;&nbsp;|
+        <Button onClick={() => auth.signOut()}>Log Out</Button>
+          </div>
+)
           :
           (<div className="app__loginContainer">
             <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>

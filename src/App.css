@@ -79,6 +79,12 @@
   
 }
 
+.app__user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .imageupload{
   display:flex;
   flex-direction: column;
